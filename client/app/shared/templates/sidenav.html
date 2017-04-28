@@ -1,0 +1,41 @@
+<md-sidenav class="sidenav-item" class="md-sidenav-left md-whiteframe-z2" md-component-id="left" md-is-locked-open="$mdMedia('gt-xs')">
+	<div layout="row">
+		<md-button 	class="sidenav-button"
+					ng-class="{'sidenav-button-selected':selectedMenu('/home')}"
+					href = "/home">
+			<i class="material-icons" title="home">home</i>
+		</md-button>
+	</div>
+	<span></span>
+	<div layout="row">
+		<md-button 	class="sidenav-button" 
+					ng-class="{'sidenav-button-selected': selectedMenu('/user_profile')}" 
+					href = "/user_profile">
+			<i class="material-icons" title="user profile">account_box</i>
+		</md-button>
+	</div>
+	<span></span>
+	<div layout="row">
+		<md-button 	class="sidenav-button"
+					ng-class="{'sidenav-button-selected': selectedMenu('/feed')}"
+					href = "/feed">
+			<i class="material-icons" title="news">view_headline</i>
+		</md-button>
+	</div>
+	<span></span>
+	<div layout="row">
+		<md-button	class="sidenav-button" 
+					ng-class="{'sidenav-button-selected': selectedMenu('/newsfeed')}"
+					href="/newsfeed">
+			<i class="material-icons" title="news">tv</i>
+		</md-button>
+	</div>
+	<span></span>
+	<div layout="row">
+		<md-button class="sidenav-button"
+				   ng-class="{'sidenavButton-selected': selectedMenu('/cms_content')}"
+				   href="/cms_content">
+			<i class="material-icons" title="cms content">text_fields</i>
+		</md-button>
+	</div>
+</md-sidenav>

@@ -1,0 +1,4 @@
+---
+applications:
+- name: codesojuapp
+  memory: 256M

@@ -1,0 +1,166 @@
+.landing{
+    /*********************************************
+      GENERAL AND SHARED
+      ********************************************/
+    
+
+    .anchor-scroll-arrow{
+        margin-bottom: 0px;
+    }
+
+    .sidenav-landing{
+        width: 100px;
+        height: 100vw;
+        background-color: #2d87b2;
+        color: white;
+    }
+
+    .sidenav-landing-select{
+        padding: 10px;
+        width: 80px;
+    }
+
+    .project-description > h2, .about-us-description > h2, .faqs-description > h2{
+        color:#2d87b2;  
+        text-align:left;
+    }
+
+    .dev-resources-image, .about-us-image, .faqs-image{
+        flex-basis: 25%;
+        flex-grow: 0;
+        text-align: center;
+    }
+    .dev-resources-image>img, .about-us-image>img, .faqs-image>img{
+        max-width: 200px;
+    }
+
+    /*********************************************
+      LANDING SECTION
+      ********************************************/
+    .header-menu {
+        padding: 0 30px;
+    }
+    .header-menu > h6 {
+        padding: 5px 30px;
+        cursor: pointer;
+        outline: none;
+    }
+
+    #landing-section{
+        opacity:0.85;
+    }
+
+    .get-started-button{
+        border: 2px solid #2d87b2;
+        color: #2d87b2;
+        width: 184px;
+        text-align: center;
+        margin: 0px;
+    }
+
+    .project-description {
+        flex-basis: 50%;
+        flex-grow: 0;
+        padding-bottom: 90px;
+    }
+
+    .photo-description {
+        flex-basis: 25%;
+        flex-grow: 0;
+    }
+    .landing-banner{
+        background-image:url('images/Desktop.png'); 
+        background-size: 100%;
+        background-repeat: no-repeat;
+        height: 40vw;
+    }
+
+    /*********************************************
+      DEV RESOURCES SECTION
+      ********************************************/
+
+    .dev-resources-description{
+        flex-basis: 50%;
+        flex-grow: 0;
+        padding: 30px 0;
+        color: #ffffff;
+    }
+    .dev-resources-description > h2 {
+        color: #50e3c2;
+        text-align: left;
+    }
+
+    #dev-resources-section{
+        background:#2d87b2;
+    }
+
+    /*********************************************
+      ABOUT US SECTION
+      ********************************************/
+
+    #about-us-section{
+        background:#edeff1;
+    }
+
+    .about-us-description{
+        flex-basis: 50%;
+        flex-grow: 0;
+        padding: 30px 0;
+    }
+
+    /*********************************************
+      FAQs SECTION
+      ********************************************/
+
+    .faqs-description{
+        flex-basis: 50%;
+        flex-grow: 0;
+        padding: 30px 0;
+        text-align: left;
+    }
+
+    #faqs-section{
+        background:#a0efdd;
+    }
+    .faqs-question{
+        font-weight: bold;
+        margin: 0;
+    }
+    .faqs-answer{
+        font-family: "Muli", sans-serif;
+        font-size: 12px;
+        font-weight: normal;
+        margin: 0;
+    }
+
+    /*********************************************
+      MEDIA QUERIES (MOBILE)
+      ********************************************/
+
+    @media only screen and (max-width: 480px) {
+        .landing-banner{
+            background-image:url('images/Mobile.png');  
+            background-size: 100%;
+            background-repeat: no-repeat;
+            height: 124.9vw;
+        }
+        #landing-section{
+            padding: 0;
+        }
+        
+        .project-description{
+            margin-bottom: 95px;
+        }   
+        #home-section{
+            flex-basis: 67%;
+            padding-top: 10px;
+            padding-bottom: 20px;
+        }
+        .project-description, .dev-resources-description, .faqs-description, .about-us-description {
+            padding: 0 30px;
+        }
+        .about-us-image>img, .dev-resources-image>img, .faqs-image>img{
+            padding: 30px;
+        }
+    }
+}

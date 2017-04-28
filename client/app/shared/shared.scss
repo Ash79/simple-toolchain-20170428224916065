@@ -1,0 +1,107 @@
+/*********************************************
+    Import page specific styles, mixins, variables
+    ********************************************/
+// Common
+@import 'mixins/mixins';
+@import 'variables/variables';
+
+.section-content{
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Sidenav Section*/
+md-sidenav, md-sidenav.md-locked-open, md-sidenav.md-closed.md-locked-open-add-active {
+    min-width: 88px !important;
+    max-width: 88px !important;
+}
+
+.sidenav-item{
+    opacity:0.85;
+    background: #2d87b2;
+    color: white;
+    height: 100%;
+}
+
+.sidenav-button{
+    padding: 20px;
+    margin: 0px !important;
+}
+.sidenav-button-selected {
+    border-left: 10px solid #FF4D62;
+    background-color: #2e7a9e;
+}
+/* Sidenav section End*/
+
+/* Footer Section */
+.footer-image-social{
+    align-items: center;
+    text-align: center;
+}
+.footer-image-social > img{
+    padding: 20px;
+}
+.footer{
+    opacity:0.74;
+    background:#edeff1;
+    padding-left: 30px;
+}
+.address-footer > h6{
+    text-align: right;
+    margin-right: 20px;
+}
+/* Footer Section End */
+
+
+/* SOJU logo Section */
+.soju-logo{
+    width: 150px;
+    height: 30px;
+    margin: 15px 60px;
+    cursor: pointer;
+    outline: none;
+}
+/* SOJU logo Section End */
+
+
+/* Toolbar Section */
+md-toolbar.toolbar-shared{
+    background-color: #f2f3f5;
+}
+.hamburger-menu-button{
+    line-height: 70px;
+    margin: 0px 20px 0px 0px;
+    padding: 0px;
+}
+.hamburger-menu-button:focus{
+    outline: none;
+    cursor: pointer;
+}
+
+/* Toolbar Section End */
+
+
+@media only screen and (max-width: 480px) {
+    .sidenav-item{
+        margin-top: 70px;
+        height: inherit;
+    }
+
+    .footer{
+        padding: 0px;
+    }
+    .address-footer > h6{
+        text-align: center;
+    }
+    .soju-logo{
+        width: 135px;
+        height: 27px;
+        margin: 20px 25px;
+    }
+    .section-content {
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        align-items: center;
+    }
+}

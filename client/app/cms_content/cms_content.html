@@ -1,0 +1,25 @@
+<div class="cms-content" id="container" layout="column" layout-fill>
+	<ng-include src="'shared/templates/toolbar.html'"></ng-include>
+	<section layout="row" flex>
+		<ng-include src="'shared/templates/sidenav.html'"></ng-include>
+		<md-content>
+			<div layout-padding ng-if="!cms_content_feature_toggle">
+				<h2>Would you like to use a CMS for your project?</h2>
+				<h4>Please change the feature toggle to true in featureToggle service and configure your CMS. We would recommend to use Contentful as a CMS.
+				<br>
+				You can proceed to the <a target="_blank" href="https://www.contentful.com/">Contentful Website</a> and follow their instructions on how to create your space, add content and assets as well as how to retrieve and include them into your application. 
+				<br>
+				Depending on the needs and complexity of your application you might want to utilize multiple tools and methods combined with a chosen CMS like content cache, strong processing engine, etc.
+				<br>
+				We have a folder structure set up for you for a simple retrieval of the content. Please see the image below. It ilustrates how the result may look in a simple use case that can be easily achieved with the proposed structure. The title, the author, the date, the text and the image are all separate entries in the CMS.
+				<br>
+				</h4>
+				<img class="cms-poc-image" src="images/cms_image_poc.png">
+			</div>
+			<div layout-padding ng-if="cms_content_feature_toggle">
+				<h2 class="cms-poc-content">{{cms_content}}</h2>
+			</div>
+		</md-content>
+	</section>
+	<ng-include src="'shared/templates/footer.html'"></ng-include>
+</div>

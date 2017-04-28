@@ -1,0 +1,358 @@
+/*******************************
+    General global settings
+    ********************************/
+* {
+  box-sizing: border-box;
+  /* Fonts Section */
+  /* Fonts Section End */ }
+  * h2 {
+    font-family: "Muli", sans-serif;
+    font-size: 28px;
+    line-height: 34px;
+    font-weight: normal; }
+  * h4 {
+    font-family: "Muli", sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: normal; }
+  * h5 {
+    font-family: "Muli", sans-serif;
+    font-style: italic;
+    font-size: 14px;
+    font-weight: normal; }
+  * h6 {
+    font-family: "Muli", sans-serif;
+    font-size: 12px;
+    font-weight: normal; }
+
+/*Media query for iPhone5*/
+@media only screen and (max-width: 330px) {
+  h4 {
+    font-family: "Muli", sans-serif;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: normal; }
+  h2 {
+    font-family: "Muli", sans-serif;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: normal; } }
+
+/*Media query for iPhone5 End*/
+/*********************************************
+    Import page specific styles, mixins, variables
+    ********************************************/
+.section-content {
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center; }
+
+/* Sidenav Section*/
+md-sidenav, md-sidenav.md-locked-open, md-sidenav.md-closed.md-locked-open-add-active {
+  min-width: 88px !important;
+  max-width: 88px !important; }
+
+.sidenav-item {
+  opacity: 0.85;
+  background: #2d87b2;
+  color: white;
+  height: 100%; }
+
+.sidenav-button {
+  padding: 20px;
+  margin: 0px !important; }
+
+.sidenav-button-selected {
+  border-left: 10px solid #FF4D62;
+  background-color: #2e7a9e; }
+
+/* Sidenav section End*/
+/* Footer Section */
+.footer-image-social {
+  align-items: center;
+  text-align: center; }
+
+.footer-image-social > img {
+  padding: 20px; }
+
+.footer {
+  opacity: 0.74;
+  background: #edeff1;
+  padding-left: 30px; }
+
+.address-footer > h6 {
+  text-align: right;
+  margin-right: 20px; }
+
+/* Footer Section End */
+/* SOJU logo Section */
+.soju-logo {
+  width: 150px;
+  height: 30px;
+  margin: 15px 60px;
+  cursor: pointer;
+  outline: none; }
+
+/* SOJU logo Section End */
+/* Toolbar Section */
+md-toolbar.toolbar-shared {
+  background-color: #f2f3f5; }
+
+.hamburger-menu-button {
+  line-height: 70px;
+  margin: 0px 20px 0px 0px;
+  padding: 0px; }
+
+.hamburger-menu-button:focus {
+  outline: none;
+  cursor: pointer; }
+
+/* Toolbar Section End */
+@media only screen and (max-width: 480px) {
+  .sidenav-item {
+    margin-top: 70px;
+    height: inherit; }
+  .footer {
+    padding: 0px; }
+  .address-footer > h6 {
+    text-align: center; }
+  .soju-logo {
+    width: 135px;
+    height: 27px;
+    margin: 20px 25px; }
+  .section-content {
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    align-items: center; } }
+
+.auth-profile {
+  font-size: 14px;
+  height: 60px; }
+
+.welcome-profile {
+  padding-right: 10px; }
+
+.icon-profile {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  margin-right: 10px; }
+
+.landing {
+  /*********************************************
+      GENERAL AND SHARED
+      ********************************************/
+  /*********************************************
+      LANDING SECTION
+      ********************************************/
+  /*********************************************
+      DEV RESOURCES SECTION
+      ********************************************/
+  /*********************************************
+      ABOUT US SECTION
+      ********************************************/
+  /*********************************************
+      FAQs SECTION
+      ********************************************/
+  /*********************************************
+      MEDIA QUERIES (MOBILE)
+      ********************************************/ }
+  .landing .anchor-scroll-arrow {
+    margin-bottom: 0px; }
+  .landing .sidenav-landing {
+    width: 100px;
+    height: 100vw;
+    background-color: #2d87b2;
+    color: white; }
+  .landing .sidenav-landing-select {
+    padding: 10px;
+    width: 80px; }
+  .landing .project-description > h2, .landing .about-us-description > h2, .landing .faqs-description > h2 {
+    color: #2d87b2;
+    text-align: left; }
+  .landing .dev-resources-image, .landing .about-us-image, .landing .faqs-image {
+    flex-basis: 25%;
+    flex-grow: 0;
+    text-align: center; }
+  .landing .dev-resources-image > img, .landing .about-us-image > img, .landing .faqs-image > img {
+    max-width: 200px; }
+  .landing .header-menu {
+    padding: 0 30px; }
+  .landing .header-menu > h6 {
+    padding: 5px 30px;
+    cursor: pointer;
+    outline: none; }
+  .landing #landing-section {
+    opacity: 0.85; }
+  .landing .get-started-button {
+    border: 2px solid #2d87b2;
+    color: #2d87b2;
+    width: 184px;
+    text-align: center;
+    margin: 0px; }
+  .landing .project-description {
+    flex-basis: 50%;
+    flex-grow: 0;
+    padding-bottom: 90px; }
+  .landing .photo-description {
+    flex-basis: 25%;
+    flex-grow: 0; }
+  .landing .landing-banner {
+    background-image: url("images/Desktop.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 40vw; }
+  .landing .dev-resources-description {
+    flex-basis: 50%;
+    flex-grow: 0;
+    padding: 30px 0;
+    color: #ffffff; }
+  .landing .dev-resources-description > h2 {
+    color: #50e3c2;
+    text-align: left; }
+  .landing #dev-resources-section {
+    background: #2d87b2; }
+  .landing #about-us-section {
+    background: #edeff1; }
+  .landing .about-us-description {
+    flex-basis: 50%;
+    flex-grow: 0;
+    padding: 30px 0; }
+  .landing .faqs-description {
+    flex-basis: 50%;
+    flex-grow: 0;
+    padding: 30px 0;
+    text-align: left; }
+  .landing #faqs-section {
+    background: #a0efdd; }
+  .landing .faqs-question {
+    font-weight: bold;
+    margin: 0; }
+  .landing .faqs-answer {
+    font-family: "Muli", sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    margin: 0; }
+  @media only screen and (max-width: 480px) {
+    .landing .landing-banner {
+      background-image: url("images/Mobile.png");
+      background-size: 100%;
+      background-repeat: no-repeat;
+      height: 124.9vw; }
+    .landing #landing-section {
+      padding: 0; }
+    .landing .project-description {
+      margin-bottom: 95px; }
+    .landing #home-section {
+      flex-basis: 67%;
+      padding-top: 10px;
+      padding-bottom: 20px; }
+    .landing .project-description, .landing .dev-resources-description, .landing .faqs-description, .landing .about-us-description {
+      padding: 0 30px; }
+    .landing .about-us-image > img, .landing .dev-resources-image > img, .landing .faqs-image > img {
+      padding: 30px; } }
+
+.home {
+  /* Chart Section */
+  /* Chart Section End */ }
+  .home .section-chart-item {
+    overflow: hidden; }
+  @media only screen and (max-width: 480px) {
+    .home .section-chart-content {
+      overflow: auto; }
+    .home .section-chart-item {
+      overflow: hidden;
+      min-height: 100%; }
+    .home .section-chart-item md-content {
+      overflow: hidden; } }
+
+.user-profile {
+  /* General */
+  /* Shared */
+  /* Name Section */
+  /* Company Name Section */
+  /* City/State/Zip Section */
+  /* Submit Section */
+  /* Mobile */ }
+  .user-profile .section {
+    flex-basis: 55%;
+    flex-grow: 0; }
+  .user-profile .content h2 {
+    color: #fb6878;
+    font-family: "Muli", sans-serif;
+    font-size: 1.5em;
+    font-weight: bold; }
+  .user-profile md-input-container {
+    margin: 0; }
+  .user-profile label {
+    font-family: "Muli", sans-serif; }
+  .user-profile .name-section > div, .user-profile .city-zip-state-section {
+    justify-content: space-between; }
+  .user-profile .email-bd-section, .user-profile .address-line-one {
+    flex-basis: 60%;
+    flex-grow: 0; }
+  .user-profile .name-section > div md-input-container {
+    flex-basis: 45%;
+    flex-grow: 0; }
+  .user-profile .company-name-section > div md-input-container {
+    flex-basis: 45%;
+    flex-grow: 0; }
+  .user-profile .city-zip-state-section > div md-input-container {
+    flex-basis: 32%;
+    flex-grow: 0; }
+  .user-profile .submit-section {
+    text-align: right;
+    margin-top: 20px; }
+  .user-profile .submit-section button {
+    background: #4d99bd;
+    color: #fff; }
+  @media only screen and (max-width: 480px) {
+    .user-profile .section {
+      flex-basis: 100%;
+      flex-grow: 0;
+      padding: 10px; }
+    .user-profile md-input-container {
+      margin: 10px; }
+    .user-profile .dropdown-style {
+      margin-bottom: 20px; }
+    .user-profile .content h2 {
+      padding: 0 10px 10px 10px; } }
+
+.newsfeed .unit-card {
+  height: 500px;
+  width: 250px; }
+
+.newsfeed .unit-card > img {
+  width: 100%; }
+
+.newsfeed .unit-card > md-card-content > h3 > a {
+  text-decoration: none;
+  color: #2d87b2; }
+
+.newsfeed .unit-card > md-card-content > span {
+  font-size: 10px; }
+
+.newsfeed .md-button.icon-fav, .newsfeed .md-button.icon-menu {
+  margin: 2px;
+  padding: 12px; }
+
+.newsfeed .icon-fav {
+  color: #ff6779; }
+
+.newsfeed .icon-menu {
+  color: #a0efdd; }
+
+@media only screen and (max-width: 480px) {
+  .newsfeed .unit-card {
+    width: 100%; } }
+
+.feed .news-feed {
+  overflow: scroll; }
+
+.cms-content .cms-poc-image {
+  margin: 10px;
+  width: 80vw;
+  border: 2px solid black; }
+
+.cms-content .cms-poc-content {
+  margin: 0; }

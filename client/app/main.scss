@@ -1,0 +1,60 @@
+
+/*******************************
+    General global settings
+    ********************************/
+* {
+    box-sizing: border-box;
+
+    /* Fonts Section */
+    h2{
+        font-family: "Muli", sans-serif;
+        font-size:28px;
+        line-height:34px;
+        font-weight: normal;
+    }
+    h4{
+        font-family: "Muli", sans-serif;
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: normal;
+    }
+    h5{
+        font-family: "Muli", sans-serif;
+        font-style: italic;
+        font-size: 14px;
+        font-weight: normal;
+    }
+    h6{
+        font-family: "Muli", sans-serif;
+        font-size: 12px;
+        font-weight: normal;
+    };
+    /* Fonts Section End */
+}
+/*Media query for iPhone5*/
+@media only screen and (max-width: 330px) {
+    h4{
+        font-family: "Muli", sans-serif;
+        font-size: 12px;
+        line-height: 18px;
+        font-weight: normal;
+    }
+    h2{
+        font-family: "Muli", sans-serif;
+        font-size:20px;
+        line-height:28px;
+        font-weight: normal;
+    }
+}
+/*Media query for iPhone5 End*/
+// Common
+@import 'shared/shared';
+
+// Views
+@import 'auth/auth';
+@import 'landing/landing';
+@import 'home/home';
+@import 'user_profile/user_profile';
+@import 'newsfeed/newsfeed';
+@import 'feed/feed';
+@import 'cms_content/cms_content';

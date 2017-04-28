@@ -1,0 +1,80 @@
+.user-profile{
+    /* General */
+    .section{
+        flex-basis: 55%;
+        flex-grow: 0;
+    }
+
+    .content h2{
+        color: #fb6878;
+        font-family: "Muli", sans-serif;
+        font-size: 1.5em;
+        font-weight: bold;
+    }
+
+    md-input-container{
+        margin: 0;
+    }
+
+    label{
+        font-family: "Muli", sans-serif;
+    }
+
+    /* Shared */
+    .name-section >div, .city-zip-state-section{
+        justify-content: space-between;
+    }
+
+    .email-bd-section, .address-line-one{
+        flex-basis: 60%;
+        flex-grow: 0;
+    }
+
+    /* Name Section */
+    .name-section > div md-input-container{
+        flex-basis: 45%;
+        flex-grow: 0;   
+    }
+
+    /* Company Name Section */
+    .company-name-section > div md-input-container{
+        flex-basis: 45%;
+        flex-grow: 0;   
+    }
+
+    /* City/State/Zip Section */
+    .city-zip-state-section > div md-input-container{
+        flex-basis: 32%;
+        flex-grow: 0;
+    }
+
+    /* Submit Section */
+    .submit-section{
+        text-align: right;
+        margin-top: 20px;
+    }
+
+    .submit-section button{
+        background: #4d99bd;
+        color: #fff;
+    }
+
+
+    /* Mobile */
+    @media only screen and (max-width: 480px) {
+        .section{
+            flex-basis: 100%;
+            flex-grow: 0;
+            padding:10px;
+        }
+        md-input-container{
+            margin: 10px;
+        }
+        .dropdown-style{
+            margin-bottom: 20px;
+        }
+        .content h2{
+            padding: 0 10px 10px 10px;
+        }
+    }
+}

@@ -1,0 +1,23 @@
+.home{
+
+    /* Chart Section */
+    .section-chart-item {
+        overflow: hidden;
+    }
+    /* Chart Section End */
+
+
+    @media only screen and (max-width: 480px) {
+        .section-chart-content {
+            overflow: auto;
+        }
+
+        .section-chart-item {
+            overflow: hidden;
+            min-height: 100%;
+        }
+        .section-chart-item md-content {
+            overflow: hidden;
+        }
+    }
+}
